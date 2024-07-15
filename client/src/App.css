@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-box {
+  margin-right: 20px;
+  background-color: #fff0f0;
+  border: 2px solid #ffcccb;
+  border-radius: 10px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ff69b4;
+  border-right: 2px solid #ff69b4;
+  transform: rotate(135deg);
+}
+
+.insider {
+  font-weight: bold;
+  color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.insider span {
+  line-height: 0.8;
+  margin-bottom: 4.5px;
+}
+
+.build-my-fit {
+  background-color: white;
+  border: 2px solid #ffc2d1;
+  border-radius: 10px;
+  padding: 5px 15px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.build-my-fit span {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  color: #ffb3c6;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search-icons .fa-camera,
+.search-icons .fa-microphone,
+.icons .fa-bell,
+.icons .fa-heart,
+.icons .fa-shopping-bag {
+  font-size: 20px;
+  color: #000;
+}
+
+.camera-icon,
+.mic-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: left;
+  margin-left: auto;
+}
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Navigation CSS */
+.navigation {
+  padding: 30px;
+  background-color: white;
+  position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 450px; /* Adjust the width as needed */
+  height: 15px; /* Adjust the height as needed */
+  justify-content: center;
+}
+
+.nav-item.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-item img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-item span {
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-category img {
+  width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.nav-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.nav-category-label {
+  text-align: center; /* Center text horizontally */
+}
+
+.nav-category-label span {
+  font-weight: bold;
+  color: #000;
+  padding: 5px 10px; /* Add padding for readability */
+  background-color: white; /* Ensure text is readable */
+  border: none; /* Remove border from text */
+  border-radius: 5px; /* Optional: Add border radius */
+}
+/* Add this CSS at the end of your existing styles */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 450px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.nav-item.active {
+  background-color: #fff; /* White background when active */
+  color: #000; /* Black text color when active */
+}
+
+/* Adjust specificity or add !important if needed */
+.nav-item:hover {
+  background-color: #f0f0f0 !important;
+}
