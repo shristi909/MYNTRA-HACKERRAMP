@@ -1,14 +1,3 @@
- COMMANDS TO RUN THE PROJECT 
- cd .\client\
- npm i
- cd ..
- cd .\server\
- npm i
- npm run dev
-
-
- cd .\client\
- npm run start
 
 
  
